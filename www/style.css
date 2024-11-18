@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1f1f1f;
+    width: 100%;
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header #logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header #logo span {
+    color: #ff6f00;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #ff6f00;
+    color: #121212;
+}
+
+main {
+    flex: 1;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-section .text {
+    max-width: 600px;
+}
+
+.text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ff6f00;
+}
+
+.text h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.text a {
+    color: #ff6f00;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media (max-width: 1080px) {
+    header nav a {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        width: 300px;
+    }
+
+    .container .text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 720px) {
+    header nav a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .container img {
+        width: 250px;
+    }
+
+    .container .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .container .text h4 {
+        font-size: 1.2rem;
+    }
+
+    .container .text p,
+    .container .text ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container img {
+        width: 200px;
+    }
+
+    .container .text h2 {
+        font-size: 1.8rem;
+    }
+
+    .container .text h4 {
+        font-size: 1.2rem;
+    }
+
+    .container .text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        display: block;
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .container img {
+        width: 150px;
+        height: auto;
+    }
+
+    .container .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .container .text h4 {
+        font-size: 1.1rem;
+    }
+
+    .container .text p,
+    .container .text ul {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
